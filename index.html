@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yumlet - Fresh & Organic Pastries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-shopping-basket"></i>
+            <span class="brand-name">Yumlet</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="Images/food2.png" alt="This is an image of a pancake">
+                <div class="content">
+                    <h3>Pancake</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="Images/food1.png" alt="This is an image of a waffle">
+                <div class="content">
+                    <h3>Waffles</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="Images/food3.png" alt="This is an image of a cupcake">
+                <div class="content">
+                    <h3>Cupcake</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : $19.69/- </div>
+            <a href="#" class="btn">check out</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login</h3>
+            <input type="email" placeholder="enter email" class="box">
+            <input type="password" placeholder="enter password" class="box">
+            <p>Forgot your password <a href="">reset here</a></p>
+            <p>Don't have an account <a href="">create here</a></p>
+            <input type="submit" value="login" class="btn">
+        </form>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Fresh and <span>organic</span> pastries for you</h3>
+            <pre>
+                Our bakery offers fresh and organic pastries made with
+                ingredients grown without synthetic pesticides or
+                chemicals.
+            </pre>
+            <a href="#" class="button">Shop with us</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h1 class="heading">Our <span>Features</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="Images/F1.png" alt="Fresh & Organic icon">
+                <h3>Fresh & Organic</h3>
+                <p>
+                    We offer handcrafted pastries made from the
+                    finest organic ingredients.
+                </p>
+                <a href="#" class="button1">Read more</a>
+            </div>
+
+            <div class="box">
+                <img src="Images/F2.png" alt="Free Delivery icon">
+                <h3>Free Delivery</h3>
+                <p>
+                    Deliciousness delivered free, straight from our
+                    oven to your door.
+                    No delivery fee. Just pure indulgence.
+                </p>
+                <a href="#" class="button1">Read more</a>
+            </div>
+
+            <div class="box">
+                <img src="Images/pay.png" alt="Easy Payments icon">
+                <h3>Easy Payments</h3>
+                <p>
+                    Fast, secure, and hassle-free payments.
+                    Seamless checkout with just a few taps.
+                </p>
+                <a href="#" class="button1">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h1 class="heading"> Our <span>Products</span></h1>
+
+        <div class="product-slider swiper mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="Images/cake.png" alt="Red Velvet Cake">
+                    <h3>Red Velvet Cake</h3>
+                    <div class="price">ksh.2000</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="button1">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="Images/pancake.jpg" alt="Japanese Pancake">
+                    <h3>Banana Pancake</h3>
+                    <div class="price">ksh.850</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="button1">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="Images/p3.png" alt="Plain Croissant">
+                    <h3>Plain Croissant</h3>
+                    <div class="price">ksh.800</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="button1">Add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Images/p4.png" alt="Doughnuts">
+                    <h3>Doughnuts</h3>
+                    <div class="price">ksh.650</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="button1">Add to cart</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+
+        <div class="product-slider swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="Images/crepes.png" alt="Crepes">
+                    <h3>Crepes</h3>
+                    <div class="price">ksh.650</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="button1">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="Images/food3.png" alt="Chocolate Cookies">
+                    <h3>Chocolate Cupcake</h3>
+                    <div class="price">ksh.850</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="button1">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="Images/wheat bread.png" alt="Bread">
+                    <h3>Bread</h3>
+                    <div class="price">ksh.250</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="button1">Add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Images/p8.png" alt="Bagels">
+                    <h3>Bagels</h3>
+                    <div class="price">ksh.950</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="button1">Add to cart</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+    </section>
+
+    <div class="categories" id="categories">
+        <h1 class="heading">Product <span>Categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="Images/s1.png">
+                <h3>Chocolate Pastries</h3>
+                <p>10% Off</p>
+                <a href="#" class="button1">Shop Now</a>
+            </div>
+
+             <div class="box">
+                <img src="Images/p1.png">
+                <h3>Fruit Pastries</h3>
+                <p>10% Off</p>
+                <a href="#" class="button1">Shop Now</a>
+            </div>
+
+             <div class="box">
+                <img src="Images/p4.png">
+                <h3>Tea Pastries</h3>
+                <p>10% Off</p>
+                <a href="#" class="button1">Shop Now</a>
+            </div>
+
+             <div class="box">
+                <img src="Images/Bread.png">
+                <h3>Breakfast Pastries</h3>
+                <p>10% Off</p>
+                <a href="#" class="button1">Shop Now</a>
+            </div>
+
+             <div class="box">
+                <img src="Images/p6.png">
+                <h3>Cookies</h3>
+                <p>10% Off</p>
+                <a href="#" class="button1">Shop Now</a>
+            </div>
+
+    <div class="box">
+                <img src="Images/p8.png">
+                <h3>Bagels</h3>
+                <p>10% Off</p>
+                <a href="#" class="button1">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="reviews" id="reviews">
+  <h1 class="heading">Customer <span>Reviews</span></h1>
+  <div class="review-container">
+
+    <div class="review-card">
+      <img src="Images/lady4.jpg">
+      <h3>Sarah</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <p>"The pastries were beyond delicious! So fresh, soft, and beautifully packaged. I Will definitely be ordering again!"</p>
+    </div>
+
+    <div class="review-card">
+      <img src="Images/lady2.jpg">
+      <h3>Rasheda</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <p>"Absolutely loved the chocolate croissants. So flaky and rich! Great service too."</p>
+    </div>
+
+    <div class="review-card">
+      <img src="Images/lady3.jpg">
+      <h3>Linda</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <p>"The best pastries I have had in a long time. You can taste the quality in every bite. Highly recommend!"</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h1 class="heading"> <strong>Contact</strong> Us</h1>
+
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Karen, Nairobi, Kenya</p>
+      <p><i class="fas fa-envelope"></i> yumletpastries@gmail.com</p>
+      <p><i class="fas fa-phone-alt"></i> +254 712 131 415</p>
+      <p><i class="fas fa-clock"></i> Mon - Fri: 7:00 AM - 6:00 PM</p>
+      <p><i class="fas fa-clock"></i> Sat - Sun: 9:00 AM - 4:00 PM</p>
+
+    </div>
+
+    <form action="#" class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="button1">Send Message</button>
+    </form>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
